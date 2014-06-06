@@ -19,6 +19,8 @@
 		97E32C941941D57800D7561E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97E32C7C1941D57800D7561E /* UIKit.framework */; };
 		97E32C9C1941D57800D7561E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 97E32C9A1941D57800D7561E /* InfoPlist.strings */; };
 		97E32C9E1941D57800D7561E /* DecoratedViewsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 97E32C9D1941D57800D7561E /* DecoratedViewsTests.m */; };
+		97E32CA91941D5B400D7561E /* RSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97E32CA81941D5B400D7561E /* RSViewController.m */; };
+		97E32CAC1941D7E200D7561E /* RSView.m in Sources */ = {isa = PBXBuildFile; fileRef = 97E32CAB1941D7E200D7561E /* RSView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,10 @@
 		97E32C991941D57800D7561E /* DecoratedViewsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DecoratedViewsTests-Info.plist"; sourceTree = "<group>"; };
 		97E32C9B1941D57800D7561E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		97E32C9D1941D57800D7561E /* DecoratedViewsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DecoratedViewsTests.m; sourceTree = "<group>"; };
+		97E32CA71941D5B400D7561E /* RSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSViewController.h; sourceTree = "<group>"; };
+		97E32CA81941D5B400D7561E /* RSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSViewController.m; sourceTree = "<group>"; };
+		97E32CAA1941D7E200D7561E /* RSView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSView.h; sourceTree = "<group>"; };
+		97E32CAB1941D7E200D7561E /* RSView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +115,10 @@
 			children = (
 				97E32C871941D57800D7561E /* RSAppDelegate.h */,
 				97E32C881941D57800D7561E /* RSAppDelegate.m */,
+				97E32CA71941D5B400D7561E /* RSViewController.h */,
+				97E32CA81941D5B400D7561E /* RSViewController.m */,
+				97E32CAA1941D7E200D7561E /* RSView.h */,
+				97E32CAB1941D7E200D7561E /* RSView.m */,
 				97E32C8A1941D57800D7561E /* Images.xcassets */,
 				97E32C7F1941D57800D7561E /* Supporting Files */,
 			);
@@ -242,6 +252,8 @@
 			files = (
 				97E32C851941D57800D7561E /* main.m in Sources */,
 				97E32C891941D57800D7561E /* RSAppDelegate.m in Sources */,
+				97E32CA91941D5B400D7561E /* RSViewController.m in Sources */,
+				97E32CAC1941D7E200D7561E /* RSView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

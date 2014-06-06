@@ -7,6 +7,7 @@
 //
 
 #import "RSAppDelegate.h"
+#import "RSViewController.h"
 
 @implementation RSAppDelegate
 
@@ -14,6 +15,9 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+	RSViewController *vc = [[RSViewController alloc] init];
+	self.window.rootViewController = vc;
+
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
