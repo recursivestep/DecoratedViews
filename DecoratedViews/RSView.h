@@ -13,10 +13,6 @@
 //
 @protocol RSViewBuilder <NSObject>
 
-// Decoration is typically done in the constructor of the abstract decorator
-// but this example is deliberately avoiding that.
-- (id<RSViewBuilder>)decorateView:(id<RSViewBuilder>)decoratedView;
-
 // This is operation we want to wrap with behavior modifiers
 - (void)buildView:(UIView *)view;
 
@@ -36,11 +32,15 @@
 
 
 //
-// This class is typically abstract. It isn't in this case but
-// we no-one should be creating instances of it
+// Decorator base. This class is typically abstract. It
+// isn't in this case but we no-one should be creating
+// instances of it
 //
 @interface RSViewBuilderDecorator : RSView
 @property(nonatomic, strong) id<RSViewBuilder> decoratedView;
+// Decoration is typically done in the constructor of the abstract decorator
+// but this example is deliberately avoiding that.
+- (id<RSViewBuilder>)decorateView:(id<RSViewBuilder>)decoratedView;
 @end
 
 
